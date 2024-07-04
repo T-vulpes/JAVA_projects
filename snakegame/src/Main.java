@@ -88,7 +88,7 @@ class SnakeGame extends JPanel implements ActionListener {
         score = 0;
 
         for (int z = 0; z < dots; z++) {
-            x[z] = 50 - z * DOT_SIZE; // Adjusted for larger DOT_SIZE
+            x[z] = 50 - z * DOT_SIZE; 
             y[z] = 50;
         }
 
