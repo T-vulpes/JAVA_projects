@@ -8,7 +8,7 @@ public class Main {
             "argentina", "australia", "brazil", "canada", "china", "denmark",
             "egypt", "france", "germany", "india", "italy", "japan", "mexico",
             "netherlands", "norway", "portugal", "russia", "spain", "sweden",
-            "switzerland", "turkey", "unitedkingdom", "unitedstates"
+            "switzerland", "turkey"
     };
     private static final int MAX_TRIES = 6;
 
