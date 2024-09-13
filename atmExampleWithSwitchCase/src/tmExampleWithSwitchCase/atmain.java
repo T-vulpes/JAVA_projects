@@ -1,4 +1,4 @@
-package tmExampleWithSwitchCase;
+package atmExampleWithSwitchCase;
 import java.util.Scanner;
 
 public class atmain {
