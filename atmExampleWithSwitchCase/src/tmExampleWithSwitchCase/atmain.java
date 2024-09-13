@@ -63,7 +63,7 @@ public class atmain {
                 case 5:
                     System.out.println("Thank you for using our ATM. Goodbye!");
                     scan.close();
-                    return; // Exits the program
+                    return;
                 default:
                     System.out.println("Invalid option. Please try again.");
                     break;
