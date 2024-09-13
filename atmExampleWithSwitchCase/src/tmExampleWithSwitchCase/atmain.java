@@ -23,7 +23,6 @@ public class atmain {
 
             switch (operation) {
                 case 1:
-                    // Case for checking balance
                     System.out.println("Your current balance is $" + balance);
                     break;
                 case 2:
