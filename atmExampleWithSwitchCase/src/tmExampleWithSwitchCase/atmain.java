@@ -9,12 +9,9 @@ public class atmain {
         int amount, recipientAccount;
         int operation;
 
-        // Welcome message
         System.out.println("Welcome to the ATM");
 
-        // While loop to continue until user chooses to exit
         while (true) {
-            // Displaying the menu
             System.out.println("\nPlease select an option: ");
             System.out.println("1: Check Balance");
             System.out.println("2: Deposit Money");
