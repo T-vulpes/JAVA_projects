@@ -65,12 +65,10 @@ public class atmain {
                     }
                     break;
                 case 5:
-                    // Case for exiting the system
                     System.out.println("Thank you for using our ATM. Goodbye!");
                     scan.close();
                     return; // Exits the program
                 default:
-                    // Case for invalid input
                     System.out.println("Invalid option. Please try again.");
                     break;
             }
