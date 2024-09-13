@@ -27,7 +27,6 @@ public class atmain {
                     System.out.println("Your current balance is $" + balance);
                     break;
                 case 2:
-                    // Case for depositing money
                     System.out.println("Enter the amount you want to deposit: ");
                     amount = scan.nextInt();
                     if (amount > 0) {
@@ -39,7 +38,6 @@ public class atmain {
                     }
                     break;
                 case 3:
-                    // Case for withdrawing money
                     System.out.println("Enter the amount you want to withdraw: ");
                     amount = scan.nextInt();
                     if (amount > 0 && amount <= balance) {
@@ -51,7 +49,6 @@ public class atmain {
                     }
                     break;
                 case 4:
-                    // Case for transferring money
                     System.out.println("Enter the recipient's account number: ");
                     recipientAccount = scan.nextInt();
                     System.out.println("Enter the amount you want to transfer: ");
