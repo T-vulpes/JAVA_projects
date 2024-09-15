@@ -10,9 +10,9 @@ public class main {
         boolean keepPlaying = true;
 
         while (keepPlaying) {
-            triesLeft = 5; // Reset tries for each game
+            triesLeft = 5; 
             Random r = new Random(); 
-            int targetNumber = r.nextInt(100) + 1; // Random number between 1 and 100
+            int targetNumber = r.nextInt(100) + 1; 
             System.out.println("Welcome to the Number Guessing Game! You need to guess a number between 1 and 100. You have " + triesLeft + " tries. Good luck!");
 
             while (triesLeft > 0) {
@@ -21,7 +21,7 @@ public class main {
 
                 if (number == targetNumber) {
                     System.out.println("Congratulations! You guessed the correct number: " + targetNumber);
-                    break; // Exit the while loop, player won
+                    break; 
                 } else if (number > targetNumber) {
                     triesLeft--;
                     System.out.println("Try a smaller number. Tries left: " + triesLeft);
