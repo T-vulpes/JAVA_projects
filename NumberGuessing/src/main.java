@@ -35,7 +35,6 @@ public class main {
                 }
             }
 
-            // Asking the player if they want to play again
             System.out.println("Would you like to play again? (yes/no):");
             playAgain = scan.next();
             if (!playAgain.equalsIgnoreCase("yes")) {
