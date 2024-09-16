@@ -137,7 +137,7 @@ public class Main {
                     }
                     break;
 
-                case 2: // View Booked Tickets
+                case 2:
                     System.out.println("Displaying all booked seats across all buses:");
                     boolean anySeatsBooked = false;
                     for (Bus bus : buses) {
@@ -151,7 +151,7 @@ public class Main {
                     }
                     break;
 
-                case 3: // Cancel Ticket
+                case 3: 
                     System.out.println("Please select the bus to cancel a seat:");
                     for (int i = 0; i < buses.length; i++) {
                         System.out.println((i + 1) + ". Bus " + buses[i].busNumber + " to " + buses[i].destination);
@@ -169,7 +169,7 @@ public class Main {
                     }
                     break;
 
-                case 4: // Exit
+                case 4: 
                     keepRunning = false;
                     System.out.println("Thank you for using the Russian Bus Reservation System. Goodbye!");
                     break;
