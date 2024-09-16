@@ -41,13 +41,12 @@ class Bus {
             System.out.println("Seat " + seatNumber + " is not booked.");
             return false;
         } else {
-            seats[seatNumber - 1] = false; // Mark the seat as available
+            seats[seatNumber - 1] = false; 
             System.out.println("Seat " + seatNumber + " has been successfully canceled on Bus " + busNumber + " to " + destination + ".");
             return true;
         }
     }
 
-    // Method to display all booked seats
     public void displayBookedSeats() {
         for (int i = 0; i < seats.length; i++) {
             if (seats[i]) {
@@ -56,7 +55,6 @@ class Bus {
         }
     }
 
-    // Check if any seats are booked
     public boolean hasBookedSeats() {
         for (boolean seat : seats) {
             if (seat) {
