@@ -4,16 +4,14 @@ import java.util.Random;
 class Bus {
     String busNumber;
     String destination;
-    boolean[] seats; // true means booked, false means available
+    boolean[] seats; 
 
-    // Constructor to initialize the bus
     public Bus(String busNumber, String destination, int totalSeats) {
         this.busNumber = busNumber;
         this.destination = destination;
         this.seats = new boolean[totalSeats]; // Initialize all seats as available
     }
 
-    // Method to display seat availability
     public void displaySeatAvailability() {
         System.out.println("Seat Availability for Bus " + busNumber + " to " + destination + ":");
         for (int i = 0; i < seats.length; i++) {
