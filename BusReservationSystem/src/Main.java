@@ -9,7 +9,7 @@ class Bus {
     public Bus(String busNumber, String destination, int totalSeats) {
         this.busNumber = busNumber;
         this.destination = destination;
-        this.seats = new boolean[totalSeats]; // Initialize all seats as available
+        this.seats = new boolean[totalSeats]; 
     }
 
     public void displaySeatAvailability() {
@@ -19,7 +19,6 @@ class Bus {
         }
     }
 
-    // Method to book a seat
     public boolean bookSeat(int seatNumber) {
         if (seatNumber > seats.length || seatNumber < 1) {
             System.out.println("Invalid seat number.");
@@ -34,7 +33,6 @@ class Bus {
         }
     }
 
-    // Method to cancel a seat booking
     public boolean cancelSeat(int seatNumber) {
         if (seatNumber > seats.length || seatNumber < 1) {
             System.out.println("Invalid seat number.");
