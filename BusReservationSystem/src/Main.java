@@ -66,17 +66,14 @@ class Bus {
 }
 
 public class Main {
-    // Function to generate a random bus number
     public static String generateRandomBusNumber() {
         Random random = new Random();
-        int busNumber = random.nextInt(9000) + 1000; // Generate a random 4-digit number
+        int busNumber = random.nextInt(9000) + 1000; 
         return "BUS-" + busNumber;
     }
 
-    // Array of Russian city names
     public static String[] cities = {"Moscow", "St. Petersburg", "Kazan", "Sochi", "Novosibirsk", "Ekaterinburg", "Vladivostok", "Nizhny Novgorod", "Kaliningrad", "Samara"};
 
-    // Function to select a random destination city
     public static String getRandomCity() {
         Random random = new Random();
         int index = random.nextInt(cities.length);
@@ -88,7 +85,7 @@ public class Main {
         Random random = new Random();
 
         // Initialize buses with random bus numbers and destinations
-        Bus[] buses = new Bus[5]; // 5 buses
+        Bus[] buses = new Bus[5]; 
         for (int i = 0; i < buses.length; i++) {
             String busNumber = generateRandomBusNumber();
             String destination = getRandomCity();
