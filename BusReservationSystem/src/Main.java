@@ -84,12 +84,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        // Initialize buses with random bus numbers and destinations
         Bus[] buses = new Bus[5]; 
         for (int i = 0; i < buses.length; i++) {
             String busNumber = generateRandomBusNumber();
             String destination = getRandomCity();
-            buses[i] = new Bus(busNumber, destination, random.nextInt(10) + 5); // Buses have 5-15 seats randomly
+            buses[i] = new Bus(busNumber, destination, random.nextInt(10) + 5); 
         }
 
         boolean keepRunning = true;
@@ -105,7 +104,7 @@ public class Main {
             int choice = scanner.nextInt();
 
             switch (choice) {
-                case 1: // Purchase Ticket
+                case 1: 
                     boolean keepBooking = true;
                     while (keepBooking) {
                         System.out.println("Please select a bus:");
