@@ -27,7 +27,7 @@ class Bus {
             System.out.println("Seat " + seatNumber + " is already booked.");
             return false;
         } else {
-            seats[seatNumber - 1] = true; // Mark the seat as booked
+            seats[seatNumber - 1] = true; 
             System.out.println("Seat " + seatNumber + " has been successfully booked on Bus " + busNumber + " to " + destination + ".");
             return true;
         }
