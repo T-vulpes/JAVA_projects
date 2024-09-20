@@ -32,7 +32,7 @@ public class Main {
                 }
             } else {
                 System.out.println("Invalid input. Please enter a valid number for your weight.");
-                scanner.next(); // Clear the invalid input
+                scanner.next(); 
             }
         }
         return weight;
@@ -49,7 +49,7 @@ public class Main {
                 }
             } else {
                 System.out.println("Invalid input. Please enter a valid number for your height.");
-                scanner.next(); // Clear the invalid input
+                scanner.next(); 
             }
         }
         return height;
