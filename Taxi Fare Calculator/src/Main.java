@@ -45,14 +45,14 @@ public class Main {
                 }
             } else {
                 System.out.println("Invalid input. Please enter a valid number.");
-                scanner.next();  // Clear invalid input
+                scanner.next();  
             }
         }
         return km;
     }
 
     private static void printFareDetails(double km, double fare) {
-        System.out.println("\n--- Fare Breakdown ---");
+        System.out.println("\n--- Fare Breakdownnn ---");
         System.out.println("Base fare: " + BASE_FARE + " TL");
         System.out.println("Distance traveled: " + km + " km");
         System.out.println("Per km rate: " + PER_KM_RATE + " TL/km");
@@ -60,7 +60,6 @@ public class Main {
         System.out.println("-----------------------\n");
     }
 
-    // Method to ask if the user wants to calculate another trip
     private static boolean promptForAnotherTrip(Scanner scanner) {
         System.out.print("Would you like to calculate fare for another trip? (yes/no): ");
         String response = scanner.next().toLowerCase();
