@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    // Constants for fare calculations
     private static final double BASE_FARE = 10.0;
     private static final double PER_KM_RATE = 2.20;
     private static final double MIN_FARE = 20.0;
@@ -14,16 +13,11 @@ public class Main {
         System.out.println("Welcome to the Taxi Fare Calculator!");
 
         while (continueTrip) {
-            // Get valid distance input from the user
             double distance = getValidDistance(scanner);
             
-            // Calculate the fare
             double fare = calculateFare(distance);
-
-            // Display the fare breakdown
             printFareDetails(distance, fare);
 
-            // Ask if the user wants to calculate again
             continueTrip = promptForAnotherTrip(scanner);
         }
 
