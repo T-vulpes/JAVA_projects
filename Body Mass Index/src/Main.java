@@ -21,7 +21,6 @@ public class Main {
         return weight / (height * height);  // BMI formula: weight (kg) / height^2 (m^2)
     }
 
-    // Method to get valid weight from the user
     private static double getValidWeight(Scanner scanner) {
         double weight = -1;
         while (weight <= 0) {
@@ -39,7 +38,6 @@ public class Main {
         return weight;
     }
 
-    // Method to get valid height from the user
     private static double getValidHeight(Scanner scanner) {
         double height = -1;
         while (height <= 0) {
@@ -57,11 +55,9 @@ public class Main {
         return height;
     }
 
-    // Method to display BMI details and category
     private static void displayBMIDetails(double bmi) {
         System.out.printf("Your BMI is: %.2f\n", bmi);
 
-        // Display BMI category based on WHO standards
         if (bmi < 18.5) {
             System.out.println("You are underweight.");
         } else if (bmi >= 18.5 && bmi < 24.9) {
@@ -74,7 +70,6 @@ public class Main {
         System.out.println("-----------------------\n");
     }
 
-    // Method to prompt the user for another calculation
     private static boolean promptForAnotherCalculation(Scanner scanner) {
         System.out.print("Would you like to calculate BMI for another person? (yes/no): ");
         String response = scanner.next().toLowerCase();
