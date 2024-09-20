@@ -5,30 +5,18 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean continueCalculating = true;
-
         System.out.println("Welcome to the Advanced Body Mass Index (BMI) Calculator!");
-
-        // Main loop to allow multiple calculations
         while (continueCalculating) {
-            // Get valid weight and height inputs
             double weight = getValidWeight(scanner);
             double height = getValidHeight(scanner);
-
-            // Calculate BMI
             double bmi = calculateBMI(weight, height);
-
-            // Display BMI result and category
             displayBMIDetails(bmi);
-
-            // Ask the user if they want to calculate again
             continueCalculating = promptForAnotherCalculation(scanner);
         }
 
         System.out.println("Thank you for using the BMI Calculator. Stay healthy!");
         scanner.close();
     }
-
-    // Method to calculate BMI
     private static double calculateBMI(double weight, double height) {
         return weight / (height * height);  // BMI formula: weight (kg) / height^2 (m^2)
     }
