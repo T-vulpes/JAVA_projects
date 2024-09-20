@@ -18,7 +18,7 @@ public class Main {
         scanner.close();
     }
     private static double calculateBMI(double weight, double height) {
-        return weight / (height * height);  // BMI formula: weight (kg) / height^2 (m^2)
+        return weight / (height * height); 
     }
 
     private static double getValidWeight(Scanner scanner) {
