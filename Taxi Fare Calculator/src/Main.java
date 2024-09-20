@@ -25,18 +25,15 @@ public class Main {
         scanner.close();
     }
 
-    // Method to calculate fare based on distance
     private static double calculateFare(double km) {
         double totalFare = BASE_FARE + (km * PER_KM_RATE);
 
-        // Apply the minimum fare rule
         if (totalFare < MIN_FARE) {
             totalFare = MIN_FARE;
         }
         return totalFare;
     }
 
-    // Method to get valid distance input
     private static double getValidDistance(Scanner scanner) {
         double km = -1;
         while (km < 0) {
@@ -54,7 +51,6 @@ public class Main {
         return km;
     }
 
-    // Method to print the detailed fare breakdown
     private static void printFareDetails(double km, double fare) {
         System.out.println("\n--- Fare Breakdown ---");
         System.out.println("Base fare: " + BASE_FARE + " TL");
