@@ -9,7 +9,7 @@ public class Main {
         double temperature;
         String country;
           System.out.print("Enter your country: ");
-        country = scan.next();  // Correct String usage
+        country = scan.next(); 
         
         System.out.print("Enter the temperature: ");
         temperature = scan.nextDouble();
