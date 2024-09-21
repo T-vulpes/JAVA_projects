@@ -27,9 +27,9 @@ public class Main {
         double totalCost = 0;
         for (Product product : products) {
             double weight = getPositiveWeight(scanner, product.name);
-            totalCost += product.calculateCost(weight); // Calculate and add to total
+            totalCost += product.calculateCost(weight); 
         }
-        System.out.printf("Your total amount is: %.2f TL%n", totalCost);  // Display the total in a cleaner format
+        System.out.printf("Your total amount is: %.2f TL%n", totalCost);  
     }
     public static double getPositiveWeight(Scanner scanner, String productName) {
         double weight = -1;
@@ -42,7 +42,7 @@ public class Main {
                 }
             } else {
                 System.out.println("Invalid input. Please enter a valid number.");
-                scanner.next();  // Clear the invalid input
+                scanner.next();  
             }
         }
         return weight;
