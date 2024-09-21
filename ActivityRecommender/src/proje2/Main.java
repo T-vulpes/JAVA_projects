@@ -6,27 +6,18 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.println("Welcome! This project will suggest activities based on the temperature and country you input.");
         
-        // Initialize variables
         double temperature;
         String country;
-        
-        // Get the user's country
-        System.out.print("Enter your country: ");
+          System.out.print("Enter your country: ");
         country = scan.next();  // Correct String usage
         
-        // Get the temperature
         System.out.print("Enter the temperature: ");
         temperature = scan.nextDouble();
-        
-        // Suggest activities based on temperature using switch-case
-        suggestActivities(country, temperature);
+       suggestActivities(country, temperature);
     }
     
-    // Function to suggest activities based on country and temperature
     public static void suggestActivities(String country, double temperature) {
         System.out.println("Suggested activities for " + country + ":");
-
-        // Using switch-case for temperature ranges
         switch (country.toLowerCase()) {
             case "paris":
                 if (temperature < 10) {
@@ -66,8 +57,6 @@ public class Main {
                     System.out.println("Warm day! Take a river cruise or relax at a summer terrace.");
                 }
                 break;
-
-
             default:
                 System.out.println("Sorry, we don't have activity suggestions for " + country + " at the moment.");
                 break;
