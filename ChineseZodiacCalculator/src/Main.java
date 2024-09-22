@@ -45,11 +45,9 @@ public class Main {
             }
         });
 
-        // Set frame visible
         frame.setVisible(true);
     }
 
-    // Method to determine Chinese Zodiac sign
     public static String getChineseZodiac(int year) {
         String[] zodiacSigns = {
             "Monkey", "Rooster", "Dog", "Pig", "Rat", "Ox", 
@@ -59,7 +57,6 @@ public class Main {
         return zodiacSigns[zodiacIndex];
     }
 
-    // Method to get description of each sign
     public static String getZodiacDescription(String zodiacSign) {
         switch (zodiacSign) {
             case "Monkey":
