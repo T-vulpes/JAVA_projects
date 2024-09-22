@@ -5,13 +5,11 @@ import java.awt.event.ActionListener;
 public class Main {
     
     public static void main(String[] args) {
-        // Create the main frame
         JFrame frame = new JFrame("Chinese Zodiac Calculator");
         frame.setSize(400, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
-        // Label and text field for birth year input
         JLabel label = new JLabel("Enter your birth year:");
         label.setBounds(50, 50, 200, 30);
         frame.add(label);
@@ -20,17 +18,14 @@ public class Main {
         birthYearField.setBounds(200, 50, 100, 30);
         frame.add(birthYearField);
 
-        // Button to calculate zodiac
         JButton calculateButton = new JButton("Calculate");
         calculateButton.setBounds(150, 100, 100, 30);
         frame.add(calculateButton);
 
-        // Label for displaying zodiac sign and description
         JLabel resultLabel = new JLabel();
         resultLabel.setBounds(50, 150, 300, 100);
         frame.add(resultLabel);
 
-        // Action listener for button
         calculateButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
