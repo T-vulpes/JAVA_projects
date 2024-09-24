@@ -36,29 +36,24 @@ public class main {
         yearComboBox.setBounds(270, 50, 100, 30);
         frame.add(yearComboBox);
 
-        // Buton
         JButton submitButton = new JButton("Submit");
         submitButton.setBounds(50, 100, 100, 30);
         submitButton.setBackground(Color.white); // Buton arka plan rengi
         submitButton.setForeground(Color.BLACK); // Buton yazı rengi
         frame.add(submitButton);
 
-        // Sonuç label'ı
         JLabel resultLabel = new JLabel();
         resultLabel.setBounds(50, 150, 300, 30);
         resultLabel.setFont(new Font("Arial", Font.PLAIN, 16)); // Yazı puntolarını büyütme
         resultLabel.setForeground(Color.WHITE);
         frame.add(resultLabel);
 
-        // Burç açıklama label'ı
         JLabel zodiacDescriptionLabel = new JLabel();
         zodiacDescriptionLabel.setBounds(50,100, 400, 100);
         zodiacDescriptionLabel.setFont(new Font("Arial", Font.PLAIN, 16)); // Yazı puntolarını büyütme
         zodiacDescriptionLabel.setForeground(Color.WHITE);
-
         frame.add(zodiacDescriptionLabel);
 
-        // Butonun tıklama işlemi
         submitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -66,11 +61,9 @@ public class main {
                 String selectedMonth = (String) monthComboBox.getSelectedItem();
                 String selectedYear = (String) yearComboBox.getSelectedItem();
 
-                // Burç hesaplama
                 String zodiacSign = getZodiacSign(Integer.parseInt(selectedDay), selectedMonth);
                 String zodiacDescription = getZodiacDescription(zodiacSign);
 
-                // Sonuç gösterme
                 resultLabel.setText("Selected Date: " + selectedDay + " " + selectedMonth + " " + selectedYear);
                 zodiacDescriptionLabel.setText("Zodiac: " + zodiacSign + " - " + zodiacDescription);
             }
