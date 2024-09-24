@@ -38,19 +38,19 @@ public class main {
 
         JButton submitButton = new JButton("Submit");
         submitButton.setBounds(50, 100, 100, 30);
-        submitButton.setBackground(Color.white); // Buton arka plan rengi
-        submitButton.setForeground(Color.BLACK); // Buton yazı rengi
+        submitButton.setBackground(Color.white); 
+        submitButton.setForeground(Color.BLACK); 
         frame.add(submitButton);
 
         JLabel resultLabel = new JLabel();
         resultLabel.setBounds(50, 150, 300, 30);
-        resultLabel.setFont(new Font("Arial", Font.PLAIN, 16)); // Yazı puntolarını büyütme
+        resultLabel.setFont(new Font("Arial", Font.PLAIN, 16)); 
         resultLabel.setForeground(Color.WHITE);
         frame.add(resultLabel);
 
         JLabel zodiacDescriptionLabel = new JLabel();
         zodiacDescriptionLabel.setBounds(50,100, 400, 100);
-        zodiacDescriptionLabel.setFont(new Font("Arial", Font.PLAIN, 16)); // Yazı puntolarını büyütme
+        zodiacDescriptionLabel.setFont(new Font("Arial", Font.PLAIN, 16)); 
         zodiacDescriptionLabel.setForeground(Color.WHITE);
         frame.add(zodiacDescriptionLabel);
 
@@ -72,7 +72,6 @@ public class main {
         frame.setVisible(true);
     }
 
-    // Burç hesaplayan metot
     public static String getZodiacSign(int day, String month) {
         switch (month) {
             case "January":
@@ -103,8 +102,6 @@ public class main {
                 return "Invalid Month";
         }
     }
-
-    // Burç açıklamalarını döndüren metot
     public static String getZodiacDescription(String zodiacSign) {
         switch (zodiacSign) {
             case "Capricorn":
