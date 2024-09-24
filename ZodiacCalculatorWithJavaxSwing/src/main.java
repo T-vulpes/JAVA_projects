@@ -13,7 +13,6 @@ public class main {
         frame.setLayout(null);
         frame.getContentPane().setBackground(Color.black);
 
-        // Günler
         String[] days = new String[31];
         for (int i = 1; i <= 31; i++) {
             days[i - 1] = String.valueOf(i);
@@ -22,7 +21,6 @@ public class main {
         dayComboBox.setBounds(50, 50, 100, 30);
         frame.add(dayComboBox);
 
-        // Aylar
         String[] months = {
             "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
         };
@@ -30,7 +28,6 @@ public class main {
         monthComboBox.setBounds(160, 50, 100, 30);
         frame.add(monthComboBox);
 
-        // Yıllar
         String[] years = new String[105];
         for (int i = 1920; i <= 2024; i++) {
             years[i - 1920] = String.valueOf(i);
