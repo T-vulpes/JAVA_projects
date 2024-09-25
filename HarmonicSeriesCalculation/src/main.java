@@ -8,12 +8,11 @@ public class main {
         int n = input.nextInt();
         double result = 0.0;
 
-        // Calculating the harmonic series
         for (int i = 1; i <= n; i++) {
             result += 1.0 / i;
         }
 
         System.out.println("Harmonic series result: " + result);
-        input.close(); // Closing the scanner
+        input.close(); 
     }
 }
