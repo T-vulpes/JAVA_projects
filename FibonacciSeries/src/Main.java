@@ -26,13 +26,11 @@ public class Main {
             System.out.println("Invalid input. Please enter a valid positive integer.");
             input.next(); 
         }
-
         int n = input.nextInt();
         if (n < 0) {
             System.out.println("Number must be positive.");
             return;
         }
-
         System.out.println("Choose method: 1) Iterative 2) Recursive");
         int choice = input.nextInt();
 
