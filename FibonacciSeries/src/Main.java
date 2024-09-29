@@ -21,11 +21,10 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
         System.out.print("Enter a positive integer: ");
         while (!input.hasNextInt()) {
             System.out.println("Invalid input. Please enter a valid positive integer.");
-            input.next(); // Clear invalid input
+            input.next(); 
         }
 
         int n = input.nextInt();
