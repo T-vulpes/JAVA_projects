@@ -1,17 +1,13 @@
 import java.util.Scanner;
 
 public class Main {
-    
-    // Recursive function to calculate nth Fibonacci number
-    public static int fibonacciRecursive(int n) {
+        public static int fibonacciRecursive(int n) {
         if (n <= 1) {
             return n;
         }
         return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
     }
-    
-    // Iterative function to print Fibonacci sequence up to nth number
-    public static void fibonacciIterative(int n) {
+        public static void fibonacciIterative(int n) {
         int a = 0, b = 1;
         System.out.println("Fibonacci sequence up to " + n + " numbers:");
         
