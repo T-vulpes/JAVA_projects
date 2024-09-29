@@ -18,7 +18,6 @@ public class Main {
             b = temp;
         }
     }
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a positive integer: ");
@@ -33,7 +32,6 @@ public class Main {
         }
         System.out.println("Choose method: 1) Iterative 2) Recursive");
         int choice = input.nextInt();
-
         if (choice == 1) {
             fibonacciIterative(n);
         } else if (choice == 2) {
@@ -41,7 +39,6 @@ public class Main {
         } else {
             System.out.println("Invalid choice.");
         }
-
         input.close();
     }
 }
