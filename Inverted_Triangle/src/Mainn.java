@@ -7,7 +7,6 @@ public class Mainn{
         int rows = scanner.nextInt();
         System.out.print("Choose triangle type (1 for Inverted, 2 for Normal): ");
         int choice = scanner.nextInt();
-
         switch (choice) {
             case 1:
                 System.out.println("Inverted Triangle:");
@@ -21,7 +20,6 @@ public class Mainn{
                     System.out.println();
                 }
                 break;
-
             case 2:
                 System.out.println("Normal Triangle:");
                 for (int i = 1; i <= rows; i++) {
@@ -34,12 +32,10 @@ public class Mainn{
                     System.out.println();
                 }
                 break;
-
             default:
                 System.out.println("Invalid choice! Please select either 1 or 2.");
                 break;
         }
-
         scanner.close();
     }
 }
