@@ -3,12 +3,8 @@ import java.util.Scanner;
 public class Mainn{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Kullanıcıdan kaç satır olacağını alıyoruz
         System.out.print("Enter the number of rows: ");
         int rows = scanner.nextInt();
-
-        // Üçgen türünü seçtiriyoruz: 1 - Ters Üçgen, 2 - Düz Üçgen
         System.out.print("Choose triangle type (1 for Inverted, 2 for Normal): ");
         int choice = scanner.nextInt();
 
