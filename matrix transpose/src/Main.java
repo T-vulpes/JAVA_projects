@@ -6,10 +6,8 @@ public class Main {
 
         System.out.print("Enter the number of rows: ");
         int row = scanner.nextInt();
-
         System.out.print("Enter the number of columns: ");
         int column = scanner.nextInt();
-
         int[][] matrix = new int[row][column];
 
         System.out.println("Enter the elements of the matrix:");
@@ -21,7 +19,6 @@ public class Main {
 
         System.out.println("Original Matrix:");
         printMatrix(matrix);
-
         int[][] transpose = new int[column][row]; // Transposed matrix has flipped dimensions
 
         // Transposing the matrix
