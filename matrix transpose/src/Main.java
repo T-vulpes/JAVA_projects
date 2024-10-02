@@ -19,9 +19,8 @@ public class Main {
 
         System.out.println("Original Matrix:");
         printMatrix(matrix);
-        int[][] transpose = new int[column][row]; // Transposed matrix has flipped dimensions
+        int[][] transpose = new int[column][row]; 
 
-        // Transposing the matrix
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
                 transpose[j][i] = matrix[i][j];
