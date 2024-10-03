@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    
-    // Method to calculate the power of a number
-    public static int calculatePower(int base, int exponent) {
+        public static int calculatePower(int base, int exponent) {
         System.out.println("Calculating " + base + " raised to the power of " + exponent);
         int result = 1;
         for (int i = 0; i < exponent; i++) {
@@ -12,8 +10,6 @@ public class Main {
         System.out.println("The result of " + base + "^" + exponent + " is " + result);
         return result;
     }
-    
-    // Method to check if a number is an Armstrong number
     public static boolean isArmstrong(int number) {
         int originalNumber = number;
         int sum = 0;
@@ -27,7 +23,7 @@ public class Main {
             int digit = number % 10; // Get the last digit
             System.out.println("Extracted digit: " + digit);
             
-            int poweredDigit = calculatePower(digit, numDigits); // Raise the digit to the power of numDigits
+            int poweredDigit = calculatePower(digit, numDigits); 
             System.out.println("Adding " + poweredDigit + " to the total sum.");
             
             sum += poweredDigit; // Add to the sum
@@ -44,7 +40,7 @@ public class Main {
             System.out.println("Since " + sum + " does not equal the original number " + originalNumber + ", it is not an Armstrong number.");
         }
         
-        return sum == originalNumber; // Return true if Armstrong, otherwise false
+        return sum == originalNumber; 
     }
     
     public static void main(String[] args) {
