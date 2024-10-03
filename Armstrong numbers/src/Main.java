@@ -13,21 +13,20 @@ public class Main {
     public static boolean isArmstrong(int number) {
         int originalNumber = number;
         int sum = 0;
-        
         System.out.println("Step 1: Determining how many digits the number has.");
-        int numDigits = String.valueOf(number).length(); // Calculate the number of digits
+        int numDigits = String.valueOf(number).length(); 
         System.out.println("The number " + originalNumber + " has " + numDigits + " digits.");
         
         System.out.println("\nStep 2: Extracting each digit and raising it to the power of " + numDigits + ".");
         while (number > 0) {
-            int digit = number % 10; // Get the last digit
+            int digit = number % 10; 
             System.out.println("Extracted digit: " + digit);
             
             int poweredDigit = calculatePower(digit, numDigits); 
             System.out.println("Adding " + poweredDigit + " to the total sum.");
             
-            sum += poweredDigit; // Add to the sum
-            number /= 10; // Remove the last digit
+            sum += poweredDigit; 
+            number /= 10; 
             System.out.println("Remaining number after removing the last digit: " + number);
         }
         
@@ -45,13 +44,9 @@ public class Main {
     
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        
         System.out.print("Please enter a number to check if it is an Armstrong number: ");
-        
-        // Check if the input is a valid integer
         if (input.hasNextInt()) {
             int number = input.nextInt();
-            
             System.out.println("\nYou entered the number: " + number);
             
             System.out.println("\nChecking if " + number + " is an Armstrong number...");
