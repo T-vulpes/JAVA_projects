@@ -21,7 +21,6 @@ public class Main {
         while (number > 0) {
             int digit = number % 10; 
             System.out.println("Extracted digit: " + digit);
-            
             int poweredDigit = calculatePower(digit, numDigits); 
             System.out.println("Adding " + poweredDigit + " to the total sum.");
             
@@ -31,14 +30,12 @@ public class Main {
         }
         
         System.out.println("\nStep 3: The sum of the digits raised to the power of " + numDigits + " is " + sum + ".");
-        
         System.out.println("\nStep 4: Checking if the sum equals the original number.");
         if (sum == originalNumber) {
             System.out.println("Since " + sum + " equals the original number " + originalNumber + ", it is an Armstrong number.");
         } else {
             System.out.println("Since " + sum + " does not equal the original number " + originalNumber + ", it is not an Armstrong number.");
         }
-        
         return sum == originalNumber; 
     }
     
@@ -58,7 +55,6 @@ public class Main {
         } else {
             System.out.println("Invalid input. Please enter an integer.");
         }
-        
         input.close();
     }
 }
