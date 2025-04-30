@@ -63,7 +63,6 @@ class PongGame extends JPanel implements KeyListener, ActionListener {
             if (score1 == 5 || score2 == 5) {
                 gameOver = true;
             }
-
             repaint();
         }
     }
