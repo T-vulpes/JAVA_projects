@@ -9,7 +9,6 @@ public class Main {
         System.out.println("Sum of multiple numbers: " + sum2);
     }
 
-    // Method to calculate the sum of arbitrary number of integers
     public static int topla(int... numbers) {
         int sum = 0;
         for (int number : numbers) {
