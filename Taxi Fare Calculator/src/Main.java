@@ -11,13 +11,11 @@ public class Main {
         boolean continueTrip = true;
 
         System.out.println("Welcome to the Taxi Fare Calculator!");
-
         while (continueTrip) {
             double distance = getValidDistance(scanner);
             
             double fare = calculateFare(distance);
             printFareDetails(distance, fare);
-
             continueTrip = promptForAnotherTrip(scanner);
         }
 
