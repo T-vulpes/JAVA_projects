@@ -46,7 +46,6 @@ public class Main {
             throw new RuntimeException(e);
         }
     }
-
     public static void writeFile(){
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter("your file path\\workingFiles\\files\\student.txt", true));  // true appends to the existing content, false overwrites it
